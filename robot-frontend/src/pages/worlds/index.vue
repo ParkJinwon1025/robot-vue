@@ -102,7 +102,7 @@ export default {
     methods: {
         // User 정보 화면으로 이동
         goToUserInfo(event, { item }) {
-            this.$router.push(`/worldInfo/${item.id}`)
+            this.$router.push(`/worlds/${item.id}`)
         },
 
         // World 생성 Dialog 열기

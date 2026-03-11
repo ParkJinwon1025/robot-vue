@@ -30,16 +30,23 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
-    '/main': RouteRecordInfo<
-      '/main',
-      '/main',
+    '/stomp/hello': RouteRecordInfo<
+      '/stomp/hello',
+      '/stomp/hello',
       Record<never, never>,
       Record<never, never>,
       | never
     >,
-    '/worldInfo/[id]': RouteRecordInfo<
-      '/worldInfo/[id]',
-      '/worldInfo/:id',
+    '/worlds/': RouteRecordInfo<
+      '/worlds/',
+      '/worlds',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/worlds/[id]': RouteRecordInfo<
+      '/worlds/[id]',
+      '/worlds/:id',
       { id: ParamValue<true> },
       { id: ParamValue<false> },
       | never
@@ -63,15 +70,21 @@ declare module 'vue-router/auto-routes' {
       views:
         | never
     }
-    'src/pages/main.vue': {
+    'src/pages/stomp/hello.vue': {
       routes:
-        | '/main'
+        | '/stomp/hello'
       views:
         | never
     }
-    'src/pages/worldInfo/[id].vue': {
+    'src/pages/worlds/index.vue': {
       routes:
-        | '/worldInfo/[id]'
+        | '/worlds/'
+      views:
+        | never
+    }
+    'src/pages/worlds/[id].vue': {
+      routes:
+        | '/worlds/[id]'
       views:
         | never
     }
